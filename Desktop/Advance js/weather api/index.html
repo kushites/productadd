@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather check</title>
+    <style>
+        #result{
+            text-align: center;
+            margin-top: 20px;
+        }
+        #result img:nth-child(2){
+        position: absolute;
+  top: 30%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  width:200px;
+  height:100px
+        }
+       #result p:nth-child(1){
+        position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+        }
+        #result h2:nth-child(3){
+        position: absolute;
+  top: 27%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+        }
+        #result p:nth-child(4){
+        position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+        }
+        #result p:nth-child(5){
+        position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+        }
+        #result p:nth-child(6){
+        position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+        }
+        #result p:nth-child(7){
+        position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+        }
+     #search{
+         text-align: center;
+     } 
+     #city{
+         padding:10px;
+         margin:20px
+     }  
+     #gete{
+         padding:10px
+     }
+     .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+     .more{
+         display:flex;
+         justify-content: space-evenly;
+     }
+     .weekly img{
+         height:40px;
+         width:40px
+     }
+     .weekly{
+        justify-content: center;
+         display:flex;
+         background-color: black;
+     }
+     .weekly div{
+         margin:20px;
+         text-align: center;
+         background-color: black;
+     }
+     .weekly p{
+         color:white
+     }
+    </style>
+    <script src="https://kit.fontawesome.com/73b65dc76b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="search"><input type="text" id="city" placeholder="Enter your city"><button id="gete">search</button></div>
+    <div id="result">
+        
+       
+    </div>
+    <div class="more"></div>
+    <div class="weekly"></div>
+</body>
+</html>
+<script src="index.js"></script>
